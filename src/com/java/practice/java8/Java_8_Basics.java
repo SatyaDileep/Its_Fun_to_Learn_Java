@@ -1,6 +1,6 @@
-package com.pramati.practice.java8;
+package com.java.practice.java8;
 
-import com.pramati.practice.java8.beans.Trade;
+import com.java.practice.java8.beans.Trade;
 
 import java.util.ArrayList;
 import java.util.List;

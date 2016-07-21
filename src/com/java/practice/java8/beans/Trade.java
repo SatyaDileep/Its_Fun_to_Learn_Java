@@ -1,4 +1,4 @@
-package com.pramati.practice.java8.beans;
+package com.java.practice.java8.beans;
 
 /**
  * Created by satyat on 13/07/16.

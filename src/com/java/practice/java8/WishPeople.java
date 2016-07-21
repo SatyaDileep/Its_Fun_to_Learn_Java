@@ -1,4 +1,4 @@
-package com.pramati.practice.java8;
+package com.java.practice.java8;
 
 import java.util.Arrays;
 import java.util.List;

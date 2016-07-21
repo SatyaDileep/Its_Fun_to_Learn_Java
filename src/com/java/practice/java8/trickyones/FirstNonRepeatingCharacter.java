@@ -1,4 +1,4 @@
-package com.pramati.practice.java8.trickyones;
+package com.java.practice.java8.trickyones;
 
 import java.util.*;
 

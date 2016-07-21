@@ -1,7 +1,6 @@
-package com.pramati.practice.java8;
+package com.java.practice.java8;
 
 import java.util.Scanner;
-import java.util.StringTokenizer;
 
 /**
  * Created by satyat on 13/07/16.
@@ -11,10 +10,10 @@ public class NumberOfWordsInString {
         Scanner s = new Scanner(System.in);
         s.useDelimiter("\\n");
         System.out.println("Please enter the string.. pressing enter would submit your input");
-        findWords(s.next());
+        findNumberOfWords(s.next());
     }
 
-    public static void findWords(String s){
-        System.out.println(""+s.trim().split("\\s+").length);
+    public static void findNumberOfWords(String s){
+        System.out.println("Number of words are : "+s.trim().split("\\s+").length);
     }
 }

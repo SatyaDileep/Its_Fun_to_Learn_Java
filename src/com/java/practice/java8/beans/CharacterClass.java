@@ -1,4 +1,4 @@
-package com.pramati.practice.java8.beans;
+package com.java.practice.java8.beans;
 
 import java.util.List;
 
