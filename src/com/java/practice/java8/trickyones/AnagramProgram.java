@@ -30,6 +30,7 @@ public class AnagramProgram {
     private static String sortString(String string){
         char[] characterArray = string.toCharArray();
         Arrays.sort(characterArray);
+        System.out.println(new String(characterArray)+" -->");
         return new String(characterArray);
     }
 

@@ -4,27 +4,22 @@ import java.util.*;
 
 /**
  * Created by satyat on 12/07/16.
+ * Ex. A-{Apple, Ant, Archery}, B-{Bat, Ball, Bike}
  */
 public class GroupWords {
 
     public static void main(String[] args) {
-        List<String> listOfStrings  = new ArrayList<String>(){{addAll(Arrays.asList("ID", "EncounterID", "CreatedDate",
+        List<String> listOfStrings  = Arrays.asList("ID", "EncounterID", "CreatedDate",
                 "LastModifiedDate", "RenderingProvider", "PostDate", "ServiceDate", "PayerType", "PayerName",
-                "ServiceLocation", "PatiendID", "PaymentID", "ChargeID", "ProcedureCode", "Applied", "Refunds"));}};
+                "ServiceLocation", "PatiendID", "PaymentID", "ChargeID", "ProcedureCode", "Applied", "Refunds");
 
-        Set<Character> setOfStartingCharacters = new HashSet<>();
-        listOfStrings.forEach(s -> setOfStartingCharacters.add(s.charAt(0)));
         SortedMap<Character, List<String>> mapOfGroupedWords = new TreeMap<>();
+        listOfStrings.forEach(s -> {
+            char character = s.charAt(0);
+            mapOfGroupedWords.putIfAbsent(character, new ArrayList<>());
+            mapOfGroupedWords.get(character).add(s);
 
-        setOfStartingCharacters.forEach(character -> {
-            listOfStrings.forEach(s -> {
-                if (s.startsWith(String.valueOf(character))){
-                    mapOfGroupedWords.putIfAbsent(character, new ArrayList<>());
-                    mapOfGroupedWords.get(character).add(s);
-                }
-            });
         });
-        System.out.println(setOfStartingCharacters);
         System.out.println(mapOfGroupedWords);
     }
 

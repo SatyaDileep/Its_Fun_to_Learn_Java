@@ -13,10 +13,10 @@ public class SplitCollection {
         originalSet.addAll(Arrays.asList("ID", "EncounterID", "CreatedDate", "LastModifiedDate", "RenderingProvider",
                 "PostDate", "ServiceDate", "PayerType", "PayerName", "ServiceLocation", "PatiendID", "PaymentID",
                 "ChargeID", "ProcedureCode", "Applied", "Refunds"));
-        System.out.println(splitCollection.splitSet(originalSet, 40));
+        //System.out.println(splitCollection.splitSet(originalSet, 4));
 
-        //System.out.println(originalSet.stream().filter(eachString -> eachString.startsWith("P")).count());
-        //System.out.println(originalSet.stream().filter(eachString -> eachString.startsWith("P")).reduce((acc, string) -> acc+" - "+string).get());
+        System.out.println(originalSet.stream().filter(eachString -> eachString.startsWith("P")).count());
+        System.out.println(originalSet.stream().filter(eachString -> eachString.startsWith("P")).reduce((acc, string) -> acc+" - "+string).get());
     }
 
     private List<List<String>> splitSet(Set<String> setToSplit, int partitionSize){
