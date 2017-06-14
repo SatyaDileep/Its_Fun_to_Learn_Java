@@ -9,9 +9,9 @@ import java.util.*;
 public class GroupWords {
 
     public static void main(String[] args) {
-        List<String> listOfStrings  = Arrays.asList("ID", "EncounterID", "CreatedDate",
-                "LastModifiedDate", "RenderingProvider", "PostDate", "ServiceDate", "PayerType", "PayerName",
-                "ServiceLocation", "PatiendID", "PaymentID", "ChargeID", "ProcedureCode", "Applied", "Refunds");
+        String test = "Eggs make ducks, And ducks make eggs,\n" +
+                "So ducklings can quack quack! The chicks go peep, Emerged from sleep, Resurfacing out back";
+        List<String> listOfStrings  = Arrays.asList(test.split("\\s+"));
 
         SortedMap<Character, List<String>> mapOfGroupedWords = new TreeMap<>();
         listOfStrings.forEach(s -> {

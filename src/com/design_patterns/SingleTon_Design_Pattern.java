@@ -11,6 +11,10 @@ package com.design_patterns;
  */
 public class SingleTon_Design_Pattern {
 
+    public static void main(String[] args) {
+        SingleTon_Design_Pattern singleTon_design_pattern = new SingleTon_Design_Pattern();
+    }
+
     /*
     ====== eager initialization ======
     private static final SingleTon_Design_Pattern singleTonObject = new SingleTon_Design_Pattern();
@@ -61,5 +65,6 @@ public class SingleTon_Design_Pattern {
             }
         }
         return singleTonObject;
+
     }
 }

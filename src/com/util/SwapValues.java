@@ -5,7 +5,7 @@ package com.util;
  * Swapping values without using temp variable
  */
 public class SwapValues {
-    public static void swapValues(int valueOne, int valueTwo){
-        valueOne = valueOne+valueTwo - (valueTwo =valueOne);
+    public static void swapValues(int valueOne, int valueTwo) {
+        valueOne = valueOne + valueTwo - (valueTwo = valueOne);
     }
 }

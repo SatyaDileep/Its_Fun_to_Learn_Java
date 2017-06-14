@@ -27,9 +27,7 @@ public class FirstNonRepeatingCharacter {
         final Character[] finalChar = {null};
         mapWithCountForEachChars.entrySet().stream()
                 .filter(characterIntegerEntry -> characterIntegerEntry.getValue().equals(1))
-                .findFirst().ifPresent(characterIntegerEntry -> {
-                    finalChar[0] = characterIntegerEntry.getKey();
-                });
+                .findFirst().ifPresent(characterIntegerEntry -> finalChar[0] = characterIntegerEntry.getKey());
         System.out.println("Exited "+new Date(System.currentTimeMillis()));
         return finalChar[0];
     }
