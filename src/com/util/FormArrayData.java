@@ -10,10 +10,13 @@ public class FormArrayData {
         {
             arrayOfIntegers[i] = (int)(Math.random()*100);
         }
-        /*for (int i: arrayOfIntegers
+        for (int i: arrayOfIntegers
                 ) {
             System.out.println(i);
-        }*/
+        }
         return arrayOfIntegers;
+    }
+    public static void main(String a[]) {
+    	getArrayData(5);
     }
 }
